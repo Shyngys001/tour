@@ -1,0 +1,8 @@
+.nothome-content {
+  padding: 100px 0;
+}
+
+.nothome-title {
+  display: flex;
+  justify-content: space-between;
+}

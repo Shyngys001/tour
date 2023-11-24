@@ -1,0 +1,61 @@
+#home {
+  display: flex;
+  align-items: center;
+  
+  color: var(--white);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-content > div {
+  width: 100%;
+}
+
+.home-carousel-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.home-carousel {
+  min-width: 240px;
+  height: 360px;
+  border-radius: 30px;
+  background-color: cadetblue;
+}
+
+.btn-home-title {
+  display: flex;
+  align-items: center;
+
+  padding: 16px 24px;
+  gap: 8px;
+
+  border-radius: 15px;
+}
+
+.changer-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-right, .btn-left {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(64, 111, 137, 0.24);
+}
+
+.btn-right {
+  background-color: var(--primary);
+}

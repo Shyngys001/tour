@@ -1,0 +1,30 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  padding: 20px 0;
+
+  background-color: transparent;
+  border-bottom: 1px solid var(--gray-1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}

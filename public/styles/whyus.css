@@ -1,0 +1,10 @@
+.whyus-content {
+  width: 100%;
+  height: 100%;
+}
+
+.whyus-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
