@@ -1,3 +1,7 @@
+.nothome {
+  overflow: hidden;
+}
+
 .nothome-content {
   padding: 100px 0;
 }
@@ -5,4 +9,35 @@
 .nothome-title {
   display: flex;
   justify-content: space-between;
+}
+
+.categories {
+  display: flex;
+  gap: 24px;
+  margin: 64px 0;
+}
+
+.category {
+  cursor: pointer;
+  padding: 12px 32px;
+  border: 1px solid var(--primary);
+  border-radius: 30px;
+  background-color: var(--white);
+}
+
+.category:first-child {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.tours {
+  display: flex;
+  gap: 32px;
+}
+
+.tour {
+  min-width: 250px;
+  height: 360px;
+  border-radius: 30px;
+  background-color: cadetblue;
 }
