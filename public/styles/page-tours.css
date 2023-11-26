@@ -7,6 +7,11 @@
   justify-content: space-between;
 }
 
+.option-buttons {
+  display: flex;
+  gap: 10px;
+}
+
 .t-tours-block {
   display: flex;
   gap: 2%;
@@ -40,7 +45,7 @@
 
   border-radius: 24px;
 
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .tour-card:hover {
@@ -50,6 +55,8 @@
 .img-tour {
   max-width: 500px;
   max-height: 500px;
+  min-width: 160px;
+  min-height: 100px;
   border-radius: 24px;
   overflow: hidden;
 }
@@ -71,4 +78,58 @@
 .tour-description {
   display: flex;
   justify-content: space-between;
+}
+
+.show-card {
+  display: none;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.s-tour-card {
+  padding: 12px;
+
+  border-radius: 24px;
+
+  background-color: var(--white-1);
+
+  transition: all 0.3s;
+}
+
+.s-tour-card:hover {
+  transform: scale(1.007);
+}
+
+.img-s-tour {
+  min-width: 160px;
+  min-height: 100px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.img-s-tour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-tour-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.s-tour-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-tour-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#showRow {
+  display: none;
 }

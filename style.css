@@ -17,6 +17,25 @@
   background-size: cover;
   background-position: center;
 }
+
+.home-carousel:nth-child(1) {
+  background-image: url("public/images/Shygys.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-carousel:nth-child(2) {
+  background-image: url("public/images/Tarbagatai.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-carousel:nth-child(3) {
+  background-image: url("public/images/Altay.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* =========================== */
 
 :root {
@@ -51,4 +70,8 @@ div, button, input {
 
 button, a {
   cursor: pointer;
+}
+
+hr {
+  margin: 24px 0;
 }

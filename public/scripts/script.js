@@ -8,6 +8,60 @@ window.addEventListener("scroll", () => {
   }
 });
 
+for (let i = 0; i < 3; ++i) {
+  document.getElementsByClassName("home-carousel")[i].addEventListener("click", () => {
+    setTimeout(() => {
+      document.getElementById("home").style.background.opacity = "0";
+    }, 200);
+    setTimeout(() => {
+      const compute = window.getComputedStyle(document.getElementsByClassName("home-carousel")[i]);
+      const image = compute.getPropertyValue("background-image");
+      const path = image.replace('url("', '').replace('")', '');
+      document.getElementById("home").style.backgroundImage = `url(${path})`;
+    }, 400);
+    setTimeout(() => {
+      document.getElementById("home").style.background.opacity = "1";
+    }, 600);
+  });
+}
+
+let replace = 0;
+document.querySelector(".btn-home-carousel-r").addEventListener("click", () => {
+  replace++;
+  if (replace == 3) replace = 0;
+
+  setTimeout(() => {
+    document.getElementById("home").style.background.opacity = "0";
+  }, 200);
+  setTimeout(() => {
+    const compute = window.getComputedStyle(document.getElementsByClassName("home-carousel")[replace]);
+    const image = compute.getPropertyValue("background-image");
+    const path = image.replace('url("', '').replace('")', '');
+    document.getElementById("home").style.backgroundImage = `url(${path})`;
+  }, 400);
+  setTimeout(() => {
+    document.getElementById("home").style.background.opacity = "1";
+  }, 600);
+});
+
+document.querySelector(".btn-home-carousel-l").addEventListener("click", () => {
+  replace--;
+  if (replace == -1) replace = 2;
+
+  setTimeout(() => {
+    document.getElementById("home").style.background.opacity = "0";
+  }, 200);
+  setTimeout(() => {
+    const compute = window.getComputedStyle(document.getElementsByClassName("home-carousel")[replace]);
+    const image = compute.getPropertyValue("background-image");
+    const path = image.replace('url("', '').replace('")', '');
+    document.getElementById("home").style.backgroundImage = `url(${path})`;
+  }, 400);
+  setTimeout(() => {
+    document.getElementById("home").style.background.opacity = "1";
+  }, 600);
+});
+
 document.querySelector(".btn-category-left").addEventListener("click", () => {
   document.querySelector(".categories").style.transform = "translateX(-770px)";
 });

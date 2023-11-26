@@ -10,7 +10,7 @@
 
   <body>
 
-    <header class="tour-header">
+    <header>
       <div class="container header-content">
         <div class="header-left">
           <div class="header-logo">
@@ -55,9 +55,10 @@
     <section class="t-tours">
       <div class="container t-tours-title">
         <button>Вводите дату</button>
-        <div>
-          <button>Grid</button>
-          <button>Sort</button>
+        <div class="option-buttons">
+          <button id="showGrid">Сетка</button>
+          <button id="showRow">Список</button>
+          <button>Сортировать</button>
         </div>
       </div>
       
@@ -139,88 +140,225 @@
             <button>5</button>
           </div>
         </div>
+        
         <div class="t-tours-content">
-          <div class="tour-card">
-            <div class="img-tour">
-              <img src="../images/Shygys.svg" alt="">
-            </div>
-
-            <div class="tour-content">
-              <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
-              <div>* * * * *</div>
-
-              <div class="tour-description">
-                <div class="tour-info">
-                  <small>Длительность тура - 24 час</small>
-                  <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
-                </div>
-
-                <div class="tour-pay">
-                  <small>от </small>
-                  <strong>$ 124.01</strong>
-                  <small>для взрослых</small>
-                  <button>Разервировать</button>
-                </div>
+          <div class="show-row">
+            <div class="tour-card">
+              <div class="img-tour">
+                <img src="../images/Shygys.svg" alt="">
               </div>
-
-              <p>Бесплатное аннулирование</p>
-              <p>Рекомендовано 100% путешественников</p>
+  
+              <div class="tour-content">
+                <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                <div>* * * * *</div>
+  
+                <div class="tour-description">
+                  <div class="tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
+                  </div>
+  
+                  <div class="tour-pay">
+                    <small>от </small>
+                    <strong>$ 124.01</strong>
+                    <small>для взрослых</small>
+                    <button>Разервировать</button>
+                  </div>
+                </div>
+  
+                <p>Бесплатное аннулирование</p>
+                <p>Рекомендовано 100% путешественников</p>
+              </div>
+            </div>
+  
+            <div class="tour-card">
+              <div class="img-tour">
+                <img src="../images/Tarbagatai.svg" alt="">
+              </div>
+  
+              <div class="tour-content">
+                <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                <div>* * * * *</div>
+  
+                <div class="tour-description">
+                  <div class="tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
+                  </div>
+  
+                  <div class="tour-pay">
+                    <small>от </small>
+                    <strong>$ 124.01</strong>
+                    <small>для взрослых</small>
+                    <button>Разервировать</button>
+                  </div>
+                </div>
+  
+                <p>Бесплатное аннулирование</p>
+                <p>Рекомендовано 100% путешественников</p>
+              </div>
+            </div>
+  
+            <div class="tour-card">
+              <div class="img-tour">
+                <img src="../images/Home.svg" alt="">
+              </div>
+  
+              <div class="tour-content">
+                <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                <div>* * * * *</div>
+  
+                <div class="tour-description">
+                  <div class="tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
+                  </div>
+  
+                  <div class="tour-pay">
+                    <small>от </small>
+                    <strong>$ 124.01</strong>
+                    <small>для взрослых</small>
+                    <button>Разервировать</button>
+                  </div>
+                </div>
+  
+                <p>Бесплатное аннулирование</p>
+                <p>Рекомендовано 100% путешественников</p>
+              </div>
             </div>
           </div>
 
-          <div class="tour-card">
-            <div class="img-tour">
-              <img src="../images/Shygys.svg" alt="">
-            </div>
-
-            <div class="tour-content">
-              <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
-              <div>* * * * *</div>
-
-              <div class="tour-description">
-                <div class="tour-info">
-                  <small>Длительность тура - 24 час</small>
-                  <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
+          <div class="show-card">
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Home.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
                 </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
 
-                <div class="tour-pay">
-                  <small>от </small>
-                  <strong>$ 124.01</strong>
-                  <small>для взрослых</small>
                   <button>Разервировать</button>
                 </div>
               </div>
-
-              <p>Бесплатное аннулирование</p>
-              <p>Рекомендовано 100% путешественников</p>
-            </div>
-          </div>
-
-          <div class="tour-card">
-            <div class="img-tour">
-              <img src="../images/Shygys.svg" alt="">
             </div>
 
-            <div class="tour-content">
-              <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
-              <div>* * * * *</div>
-
-              <div class="tour-description">
-                <div class="tour-info">
-                  <small>Длительность тура - 24 час</small>
-                  <p>Посетите Чарынский каньон, Черный каньон, озера Кольсай и Каинды за один день. Наслаждайтесь красотами Алматинской области. Тур включает в себя,…</p>
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Shygys.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
                 </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
 
-                <div class="tour-pay">
-                  <small>от </small>
-                  <strong>$ 124.01</strong>
-                  <small>для взрослых</small>
                   <button>Разервировать</button>
                 </div>
               </div>
+            </div>
 
-              <p>Бесплатное аннулирование</p>
-              <p>Рекомендовано 100% путешественников</p>
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Tarbagatai.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
+                </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
+
+                  <button>Разервировать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Shygys.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
+                </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
+
+                  <button>Разервировать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Tarbagatai.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
+                </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
+
+                  <button>Разервировать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="s-tour-card">
+              <div class="img-s-tour">
+                <img src="../images/Home.svg" alt="">
+              </div>
+              
+              <div class="s-tour-content">
+                <div class="s-tour-card-title">
+                  <h3>1. Однодневный частный Чарынский каньон, Черный каньон, Кольсай и Каинды.</h3>
+                  <div>* * * * *</div>
+                </div>
+  
+                <div class="s-tour-description">
+                  <div class="s-tour-info">
+                    <small>Длительность тура - 24 час</small>
+                    <small>от <strong>$ 124.01</strong> для взрослых</small>
+                  </div>
+
+                  <button>Разервировать</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -253,6 +391,6 @@
       </div> 
     </footer>
 
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/archscript.js"></script>
   </body>
 </html>
