@@ -10,10 +10,17 @@ header {
   border-bottom: 1px solid var(--gray-1);
   
   transition: all 0.3s;
+
+  z-index: 10;
+}
+
+.tour-header {
+  background-color: var(--white-1);
+  border-bottom: none;
 }
 
 .headered {
-  background-color: var(--white);
+  background-color: var(--white-1);
   box-shadow: 0 3px 10px rgba(50, 50, 50, 0.3);
 }
 
@@ -36,6 +43,15 @@ header {
   display: flex;
   align-items: center;
   gap: 80px;
+}
+
+.search {
+  padding: 16px 24px;
+
+  border: none;
+  border-radius: 30px;
+
+  outline: 1px solid var(--primary);
 }
 
 nav ul {

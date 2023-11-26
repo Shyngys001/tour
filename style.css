@@ -7,6 +7,8 @@
 @import url("public/styles/nothome.css");
 @import url("public/styles/whyus.css");
 
+@import url("public/styles/page-tours.css");
+
 /* ===>> must be changed <<=== */
 #home {
   width: 100%;
@@ -21,6 +23,7 @@
   --primary: #406F89;
   --primary-1: #F1FCFF;
   --white: #FFFFFF;
+  --white-1: #F7F9FB;
   --black: #000000;
   --gray-1: rgba(255, 255, 255, 0.5);
 }
@@ -39,10 +42,11 @@
 
 h1, h2, h3, h4, h5, h6,
 p, a, small, strong, li, 
-div, button {
+div, button, input {
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
   list-style: none;
+  color: var(--black);
 }
 
 button, a {
