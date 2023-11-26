@@ -8,23 +8,13 @@
     <link rel="stylesheet" href="../../style.css">
   </head>
 
-  <body>
+  <body id="tour">
 
     <header>
       <div class="container header-content">
         <div class="header-left">
           <div class="header-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="172" height="46" viewBox="0 0 172 46" fill="none">
-              <g clip-path="url(#clip0_183_1916)">
-                <path d="M50.334 18.4147L69.1631 5.27809L72.0094 7.68647L81.424 0.0234375L90.6196 7.24858L93.028 5.27809L111.857 18.1958L94.7796 9.87591L94.5606 13.379L82.5187 5.49703L79.6724 8.12436L86.2407 14.0358L77.9209 10.3138L75.5125 12.2843L70.2579 9.21907L68.0684 10.3138L78.5777 17.32L64.7843 12.0653L50.334 18.4147Z" fill="#406F89"/>
-                <path d="M11.4713 33.8597V35.3637L8.53854 40.1262L11.4713 44.8888V46.3928H8.46336L5.60578 41.5048H3.45006V46.3928H0.191406V33.8598H3.45006V38.7478H5.60578L8.46336 33.8598L11.4713 33.8597ZM13.9781 46.3927V35.7394L15.8581 33.8594H23.1272L25.0072 35.7394V46.3927H21.7485V42.8834H17.2364V46.3927H13.9781ZM17.2369 40.126H21.749V36.6167H17.2369V40.126ZM38.1674 33.8597V36.617L31.7756 43.6356H38.1674V46.3929H27.514V43.6356L33.9058 36.617H27.514V33.8597H38.1674ZM40.6739 46.3927V35.7394L42.5539 33.8594H49.8229L51.7029 35.7394V46.3927H48.4443V42.8834H43.9322V46.3927H40.6739ZM43.9327 40.126H48.4447V36.6167H43.9327V40.126ZM65.8655 33.8597V35.3637L62.9327 40.1262L65.8655 44.8888V46.3928H62.8575L59.9999 41.5048H57.8442V46.3928H54.5856V33.8598H57.8442V38.7478H59.9999L62.8575 33.8598L65.8655 33.8597ZM76.1682 33.8597H79.4268V46.3927H76.1682V41.5047H71.6561V46.3927H68.3724L68.3974 33.8597H71.6561V38.7477H76.1682L76.1682 33.8597ZM88.0745 36.6167V33.8594H98.7279V36.6167H95.0181V46.3927H91.7594V36.6167H88.0745ZM109.882 33.8597L111.762 35.7397V44.5129L109.882 46.3929H102.613L100.733 44.5129V35.7397L102.613 33.8597H109.882ZM108.503 43.6354V36.6168H103.991V43.6354H108.503ZM114.645 44.5127V33.8594H117.904V43.6354H122.416V33.8594H125.674V44.5127L123.794 46.3927H116.525L114.645 44.5127ZM139.837 35.7394V40.126L137.957 42.006L139.837 44.8886V46.3926H136.829L134.222 42.1313H131.815V46.3926H128.557V33.8596H137.957L139.837 35.7394ZM136.578 39.3741V36.6168H131.816V39.3741H136.578ZM150.615 36.6167H145.978V38.7473H152.119L153.999 40.6273V44.5126L152.119 46.3925H144.599L142.719 44.5126V42.6326H145.101L146.103 43.6352H150.741V41.5046H144.599L142.719 39.6246V35.7394L144.599 33.8594H152.119L153.999 35.7394V37.6193H151.618L150.615 36.6167Z" fill="#406F89"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_183_1916">
-                  <rect width="172" height="46" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
+            <img class="img-header-logo" src="../images/icons/logo.svg" alt="">
           </div>
           
           <input class="search" type="text">
@@ -33,14 +23,14 @@
         <div class="header-right">
           <nav>
             <ul>
-              <li><a href="">Туры</a></li>
-              <li><a href="">О Нас</a></li>
-              <li><a href="">Контакты</a></li>
-              <li><a href="">Support</a></li>
+              <li><a class="header-link" href="public/pages/tours.html">Туры</a></li>
+              <li><a class="header-link" href="">О Нас</a></li>
+              <li><a class="header-link" href="">Контакты</a></li>
+              <li><a class="header-link" href="">Support</a></li>
             </ul>
           </nav>
 
-          <button>Войти</button>
+          <button class="enter">Войти</button>
         </div>
       </div>
     </header>
@@ -48,17 +38,23 @@
     <div style="height: 95px;"></div>
     <div class="path">
       <div class="container">
-        главная > туры > для друзей > чарынский каньон
+        <p class="sitemap">главная > туры > для друзей > чарынский каньон</p>
       </div>
     </div>
     
     <section class="t-tours">
       <div class="container t-tours-title">
-        <button>Вводите дату</button>
+        <button class="btn-t-tours-option">
+          <img src="../images/icons/calendar.svg" alt="">Вводите дату
+        </button>
         <div class="option-buttons">
-          <button id="showGrid">Сетка</button>
-          <button id="showRow">Список</button>
-          <button>Сортировать</button>
+          <button class="btn-t-tours-option" id="showGrid">
+            <img src="../images/icons/grid.svg" alt="">Сетка
+          </button>
+          <button class="btn-t-tours-option" id="showRow">
+            <img src="../images/icons/row.svg" alt="">Список
+          </button>
+          <button class="btn-t-tours-option">Сортировать</button>
         </div>
       </div>
       
@@ -136,8 +132,7 @@
 
           <div class="param">
             <h3>Рейтинг тура</h3>
-
-            <button>5</button>
+            <div>* * * * *</div>
           </div>
         </div>
         
@@ -162,7 +157,7 @@
                     <small>от </small>
                     <strong>$ 124.01</strong>
                     <small>для взрослых</small>
-                    <button>Разервировать</button>
+                    <button class="enter">Разервировать</button>
                   </div>
                 </div>
   
@@ -190,7 +185,7 @@
                     <small>от </small>
                     <strong>$ 124.01</strong>
                     <small>для взрослых</small>
-                    <button>Разервировать</button>
+                    <button class="enter">Разервировать</button>
                   </div>
                 </div>
   
@@ -218,7 +213,7 @@
                     <small>от </small>
                     <strong>$ 124.01</strong>
                     <small>для взрослых</small>
-                    <button>Разервировать</button>
+                    <button class="enter">Разервировать</button>
                   </div>
                 </div>
   
@@ -246,7 +241,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -268,7 +263,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -290,7 +285,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -312,7 +307,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -334,7 +329,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -356,7 +351,7 @@
                     <small>от <strong>$ 124.01</strong> для взрослых</small>
                   </div>
 
-                  <button>Разервировать</button>
+                  <button class="enter">Разервировать</button>
                 </div>
               </div>
             </div>
@@ -376,7 +371,7 @@
         <nav class="footer-nav">
           <h2>Навигация</h2>
           <ul>
-            <li><a href="">Туры</a></li>
+            <li><a href="public/pages/tours.html">Туры</a></li>
             <li><a href="">О Нас</a></li>
             <li><a href="">Контакты</a></li>
             <li><a href="">Support</a></li>
@@ -386,7 +381,11 @@
         <div class="footer-contact">
           <h2>Контакт</h2>
           <p>secondname@gmail.com</p>
-          <h1>A R S H Y N !</h1>
+          <div style="display: flex; gap: 10px;">
+            <img src="public/images/icons/instagram.svg" alt="">
+            <img src="public/images/icons/whatsapp.svg" alt="">
+            <img src="public/images/icons/facebook.svg" alt="">
+          </div>
         </div>
       </div> 
     </footer>

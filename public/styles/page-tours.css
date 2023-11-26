@@ -1,3 +1,7 @@
+#tour a {
+  color: var(--black);
+}
+
 .t-tours {
   padding: 80px 0;
 }
@@ -28,7 +32,15 @@
   flex-direction: column;
 }
 
-.t-tours-content {
+.param a {
+  border-bottom: 1px solid var(--gray-2);
+}
+
+.t-tours-content > div > div {
+  box-shadow: 0 0.5px 10px rgba(50, 50, 50, 0.1);
+}
+
+.show-row {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -132,4 +144,22 @@
 
 #showRow {
   display: none;
+}
+
+.btn-t-tours-option {
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  border: 1px solid var(--black);
+  border-radius: 30px;
+
+  background-color: var(--white-1);
+}
+
+.sitemap {
+  font-family: monospace;
 }

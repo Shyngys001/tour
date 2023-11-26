@@ -1,9 +1,34 @@
 #home {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../images/Home.svg");
+  background-size: cover;
+  background-position: center;
+
   display: flex;
   align-items: center;
   
   color: var(--white);
   transition: all 0.2s;
+}
+
+.home-carousel:nth-child(1) {
+  background-image: url("../images/Shygys.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-carousel:nth-child(2) {
+  background-image: url("../images/Tarbagatai.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-carousel:nth-child(3) {
+  background-image: url("../images/Altay.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .home-content {
@@ -29,6 +54,10 @@
   background-color: cadetblue;
 }
 
+.home-title p {
+  margin: 16px 0 42px 0;
+}
+
 .btn-home-title {
   display: flex;
   align-items: center;
@@ -36,7 +65,11 @@
   padding: 16px 24px;
   gap: 8px;
 
+  border: none;
   border-radius: 15px;
+
+  color: var(--white);
+  background-color: rgba(64, 111, 137, 0.24);
 }
 
 .changer-btn-group {
@@ -55,8 +88,4 @@
   border: none;
   border-radius: 100%;
   background-color: rgba(64, 111, 137, 0.24);
-}
-
-.btn-right {
-  background-color: var(--primary);
 }

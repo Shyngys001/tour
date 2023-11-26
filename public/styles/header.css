@@ -46,16 +46,33 @@ header {
 }
 
 .search {
-  padding: 16px 24px;
+  padding: 12px 12px 12px 38px;
 
   border: none;
   border-radius: 30px;
 
   outline: 1px solid var(--primary);
+
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   gap: 48px;
+}
+
+.enter {
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 30px;
+  
+  color: var(--white);
+  background-color: var(--primary);
 }
