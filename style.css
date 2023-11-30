@@ -31,7 +31,7 @@
 
 .container {
   max-width: 1720px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -53,4 +53,9 @@ a {
 
 hr {
   margin: 24px 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
 }
