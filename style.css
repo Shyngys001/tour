@@ -9,6 +9,10 @@
 
 @import url("public/styles/page-tours.css");
 
+@import url("public/styles/login.css");
+@import url("public/styles/register.css");
+@import url("public/styles/details.css");
+
 :root {
   --primary: #406F89;
   --primary-1: #F1FCFF;

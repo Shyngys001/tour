@@ -1,0 +1,16 @@
+.register-type {
+  width: 100%;
+  display: flex;
+  margin: 24px 0;
+  
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+}
+
+.register-type > button {
+  width: 100%;
+}
+
+.register {
+  width: 100%;
+}
