@@ -97,7 +97,7 @@
             <h2>Бронируй свою месту</h2>
             <small>от - <strong>15.000 TG</strong> каждому взрослому человеку</small>
             <span>   </span>
-            <button class="enter">Бронировать</button>
+            <button class="enter" id="enter">Бронировать</button>
             <hr>
           </div>
         </div>
@@ -133,6 +133,23 @@
         </div>
       </div> 
     </footer>
+
+    <form id="orderForm" onsubmit="return validateForm()">
+      <img id="form_close" src="white_close.png" alt="">
+      <div class="for">
+          <label for="name" class="label_detail">Name:</label>
+          <input type="text" id="name" name="name" class="input_detail" required placeholder="Shyn Dev"><br><br>
+        
+          <label for="email" class="label_detail">Email:</label>
+          <input type="email" id="email" name="email" class="input_detail" required placeholder="shyn@mail.com"><br><br>
+        
+          <label for="phone" class="label_detail">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" class="input_detail" required placeholder="+7 747 989 4879"><br><br>
+        
+          <input type="submit" class="input_detail" value="Submit">
+      </div>
+      
+  </form>
 
     <script src="../scripts/header.js"></script>
   </body>

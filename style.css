@@ -59,3 +59,62 @@ body {
   width: 100%;
   margin: 0 auto;
 }     
+
+
+
+#orderForm {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    z-index: 10000;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%);
+    transform: translateY(-50%);
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    height: 450px;
+    align-items: center;
+    position: fixed;
+    display: none;
+  } 
+  
+  #form_close {
+    cursor: pointer;
+  }
+
+  .for {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .label_detail,
+  .input_detail {
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 60%;
+    height: 5vh;
+    border-radius: 5px;
+  }
+  
+  .input_detail[type="submit"] {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  form img {
+    position: absolute;
+    top:25px;
+    right: 25px;
+  }

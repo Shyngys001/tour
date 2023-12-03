@@ -5,3 +5,13 @@ window.addEventListener("scroll", () => {
     document.querySelector("header").classList.remove("headered");
   }
 });
+
+let bronirovat = document.getElementById("enter");
+bronirovat.addEventListener('click', () => {
+  orderForm.style.display  = 'block';
+})
+
+let form_close = document.getElementById('form_close');
+form_close.addEventListener('click', () => {
+  orderForm.style.display  = 'none';
+})
